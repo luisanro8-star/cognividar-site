@@ -1,0 +1,18 @@
+Actualización de marca y logos — Cognividar
+-------------------------------------------
+Archivos modificados (7):
+- 404.html
+- contacto.html
+- index.html
+- nosotros.html
+- politica-privacidad.html
+- servicios.html
+- terminos.html
+
+Cambios principales:
+- Inserción de logo en header (slogan solo en Home) y logo en footer.
+- Favicon 32x32 agregado en <head>.
+- Normalización del nombre de marca a 'Cognividar' en todo el HTML.
+- Títulos y meta descripción actualizados; etiquetas Open Graph básicas añadidas.
+- Carga diferida (loading='lazy') para imágenes no críticas.
+- Nuevos archivos en assets/img/: logo-header.png, logo-footer.png, favicon-32.png.
