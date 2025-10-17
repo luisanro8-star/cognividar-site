@@ -1,4 +1,3 @@
-
 /* Cognividar brand layout and tweaks (2025) */
 header .brand-wrap{display:flex;flex-direction:column;align-items:center;justify-content:center;margin:20px auto;text-align:center}
 header .brand-wrap img{max-width:180px;height:auto;filter:drop-shadow(0 2px 3px rgba(0,0,0,.1))}
@@ -11,3 +10,49 @@ header .menu a:hover{color:#F6A623}
 footer .footer-brand{display:flex;justify-content:center;margin-top:30px}
 footer .footer-brand img{max-width:130px;height:auto;opacity:.9;transition:opacity .3s ease}
 footer .footer-brand img:hover{opacity:1}
+
+/* ==== Header híbrido Cognividar (2025) ==== */
+/* Desktop ≥ 768px: icono + nombre/slogan en fila (horizontal compacto) */
+header .brand-hybrid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 14px auto 8px;
+  text-align: left;
+}
+header .brand-hybrid .logo-icon {
+  width: 72px; height: 72px; object-fit: contain;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.08));
+}
+header .brand-hybrid .brand-text .name {
+  font-weight: 800; font-size: 26px; line-height: 1.1; color: #0f172a;
+}
+header .brand-hybrid .brand-text .sub {
+  font-size: 15px; color: #F6A623; font-weight: 600; margin-top: 2px;
+}
+/* Menú bajo el bloque de marca */
+header .nav-row {
+  display: flex; justify-content: center; flex-wrap: wrap; gap: 16px; margin: 10px 0 4px;
+}
+header .nav-row a {
+  text-decoration: none; color: #1A3C5A; font-weight: 500; transition: color .3s ease;
+}
+header .nav-row a:hover { color: #F6A623; }
+
+/* Fondo cálido y sutil separación */
+header.nav { background-color: #fdfaf7; padding: 18px 0; border-bottom: 1px solid #eee; }
+
+/* ===== Mobile < 768px: centrado clásico (icono arriba, nombre y slogan debajo) ===== */
+@media (max-width: 767px) {
+  header .brand-hybrid {
+    flex-direction: column; gap: 8px; text-align: center;
+  }
+  header .brand-hybrid .logo-icon { width: 84px; height: auto; }
+  header .brand-hybrid .brand-text .name { font-size: 24px; }
+  header .brand-hybrid .brand-text .sub { font-size: 15px; }
+}
+/* Footer logo */
+footer .footer-brand { display:flex; justify-content:center; margin-top: 30px; }
+footer .footer-brand img { max-width:130px; height:auto; opacity:.9; transition: opacity .3s ease; }
+footer .footer-brand img:hover { opacity:1; }
