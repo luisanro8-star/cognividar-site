@@ -56,3 +56,24 @@ header.nav { background-color: #fdfaf7; padding: 18px 0; border-bottom: 1px soli
 footer .footer-brand { display:flex; justify-content:center; margin-top: 30px; }
 footer .footer-brand img { max-width:130px; height:auto; opacity:.9; transition: opacity .3s ease; }
 footer .footer-brand img:hover { opacity:1; }
+
+
+
+/* ==== Header híbrido Cognividar v2 (2025) ==== */
+/* Desktop: horizontal compacto con tipografía más fuerte */
+header .brand-hybrid{display:flex;align-items:center;justify-content:center;gap:16px;margin:16px auto 10px;text-align:left}
+header .brand-hybrid .logo-icon{width:88px;height:auto;object-fit:contain;filter:drop-shadow(0 1px 2px rgba(0,0,0,.08))}
+header .brand-hybrid .brand-text .name{font-weight:900;font-size:clamp(26px,2.4vw,30px);line-height:1.1;color:#0B1F35;letter-spacing:-0.02em}
+header .brand-hybrid .brand-text .sub{font-size:16px;color:#F6A623;font-weight:600;margin-top:4px}
+header .nav-row{display:flex;justify-content:center;flex-wrap:wrap;gap:16px;margin:12px 0 6px}
+header .nav-row a{text-decoration:none;color:#1A3C5A;font-weight:600;transition:color .25s ease}
+header .nav-row a:hover{color:#F6A623}
+header.nav{background-color:#fdfaf7;padding:18px 0;border-bottom:1px solid #eee}
+
+/* Mobile: centrado clásico */
+@media (max-width: 767px){
+  header .brand-hybrid{flex-direction:column;gap:8px;text-align:center}
+  header .brand-hybrid .logo-icon{width:72px}
+  header .brand-hybrid .brand-text .name{font-size:clamp(22px,5.2vw,26px)}
+  header .brand-hybrid .brand-text .sub{font-size:15px}
+}
