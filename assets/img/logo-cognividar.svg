@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="turquoiseGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2CB7B5"/>
+      <stop offset="100%" stop-color="#0FA3A1"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF8743"/>
+      <stop offset="100%" stop-color="#E14C2A"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9AD45A"/>
+      <stop offset="100%" stop-color="#46A74B"/>
+    </linearGradient>
+  </defs>
+  <!-- Spiral base (orange) -->
+  <g transform="translate(512 600)">
+    <path d="M 0 -220
+             C 121 -220, 220 -121, 220 0
+               220 101, 138 180, 40 180
+               -40 180, -100 120, -100 40
+               -100 -27, -47 -80, 20 -80
+               62 -80, 96 -46, 96 -4
+               96 32, 67 60, 31 60
+               6 60, -14 40, -14 15" 
+          fill="none" stroke="url(#orangeGrad)" stroke-width="40" stroke-linecap="round"/>
+  </g>
+  <!-- Human figure (turquoise) -->
+  <circle cx="590" cy="300" r="36" fill="url(#turquoiseGrad)"/>
+  <path d="M 560 340
+           C 520 420, 510 520, 520 640
+           C 523 675, 560 690, 585 660
+           C 660 570, 705 480, 730 400
+           C 740 365, 715 340, 685 350
+           C 640 365, 605 390, 560 340 Z" fill="url(#turquoiseGrad)"/>
+  <!-- Leaves (green) -->
+  <path d="M 400 620
+           C 360 580, 340 540, 340 500
+           C 380 500, 420 520, 460 560
+           C 500 600, 520 640, 520 680
+           C 480 680, 440 660, 400 620 Z" fill="url(#leafGrad)"/>
+  <path d="M 720 520
+           C 740 500, 780 490, 820 500
+           C 810 540, 790 570, 760 590
+           C 740 600, 720 600, 700 590
+           C 690 560, 700 540, 720 520 Z" fill="url(#leafGrad)"/>
+  <!-- Wordmark -->
+  <text x="260" y="860" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif"
+        font-size="128" font-weight="700" fill="#0F7A80">CogniviDAR</text>
+</svg>
