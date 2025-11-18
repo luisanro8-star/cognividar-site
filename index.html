@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>CogniviDAR | Educación y Bienestar 100% online</title>
-  <meta name="description" content="Clases de Matemáticas, Física, Química y terapias profesionales (Psicología, Fonoaudiología, Fisioterapia, Gerontología). Atención 100% online.">
+  <meta name="description" content="Clases de Matemáticas, Física y Química y terapias profesionales (Psicología, Fonoaudiología, Fisioterapia, Gerontología). Atención 100% online.">
 
   <!-- Favicon y Apple Icon (usa tu logo oficial) -->
   <link rel="icon" type="image/png" href="assets/img/logo-cognividar.png">
@@ -34,7 +34,12 @@
       <a href="#planes">Planes</a>
       <a href="#faq">FAQ</a>
       <a href="#contacto" class="btn btn-outline">Contacto</a>
-      <a href="#agendar" class="btn btn-primary">Agendar</a>
+      <!-- De momento, Agendar lleva al enlace de clases -->
+      <a href="https://calendly.com/cognividar/30min"
+         class="btn btn-primary"
+         target="_blank" rel="noopener">
+        Agendar
+      </a>
     </nav>
   </div>
 </header>
@@ -54,26 +59,38 @@
         </h1>
 
         <p class="lead">
-          Clases (Matemáticas, Física, Química) y terapias profesionales
-          (Psicología, Fonoaudiología, Fisioterapia, Gerontología).
-          100% online y personalizadas.
+          Clases personalizadas (Matemáticas, Física, Química) y un ecosistema pensado
+          para integrar educación y bienestar. 100% online, con especialistas seleccionados.
         </p>
 
         <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px">
-          <a href="#agendar-clase" class="btn btn-primary">Reservar clase</a>
-          <a href="#agendar-terapia" class="btn btn-dark">Agendar terapia</a>
+          <!-- CLASES: funcional con Calendly -->
+          <a href="https://calendly.com/cognividar/30min"
+             class="btn btn-primary"
+             target="_blank" rel="noopener">
+            Reservar clase
+          </a>
+          <!-- TERAPIA: placeholder por ahora -->
+          <a href="#"
+             class="btn btn-dark"
+             onclick="alert('Muy pronto podrás agendar terapias online aquí 🤝'); return false;">
+            Agendar terapia
+          </a>
           <a href="#planes" class="btn btn-outline">Ver planes</a>
         </div>
       </div>
 
       <aside class="hero-card">
         <strong>Sesiones online fáciles y efectivas</strong>
-        <p class="small">Agenda rápido, paga online y conéctate desde cualquier dispositivo.</p>
+        <p class="small">
+          Elige tu clase, agenda en el horario que mejor te funcione
+          y conéctate por videollamada desde cualquier dispositivo.
+        </p>
 
         <div class="hero-badges">
-          <span class="hero-badge">Profesionales certificados</span>
+          <span class="hero-badge">Docentes verificados</span>
           <span class="hero-badge">Pagos seguros</span>
-          <span class="hero-badge">Acompañamiento continuo</span>
+          <span class="hero-badge">Acompañamiento y seguimiento</span>
         </div>
       </aside>
 
@@ -86,44 +103,64 @@
 <section id="servicios" class="section">
   <div class="container">
     <h2 class="h2">Servicios</h2>
-    <p class="p-muted">Agenda en menos de 3 minutos.</p>
+    <p class="p-muted">Empezamos contigo en la parte académica. Terapias vendrán después.</p>
 
     <div class="cards" style="margin-top:18px">
 
+      <!-- Clases académicas (funcionales) -->
       <div class="card">
-        <h3>Matemáticas</h3>
-        <p class="p-muted">Álgebra, Cálculo, Estadística y refuerzos personalizados.</p>
-        <a href="#agendar-clase" class="btn btn-outline">Reservar</a>
+        <h3>Clases de Matemáticas</h3>
+        <p class="p-muted">Álgebra, Cálculo, Estadística y más, con explicación clara y aplicada.</p>
+        <a href="https://calendly.com/cognividar/30min"
+           class="btn btn-outline"
+           target="_blank" rel="noopener">
+          Reservar clase
+        </a>
       </div>
 
       <div class="card">
-        <h3>Física</h3>
-        <p class="p-muted">Mecánica, Electricidad, Ondas. Preparación para exámenes.</p>
-        <a href="#agendar-clase" class="btn btn-outline">Reservar</a>
+        <h3>Clases de Física</h3>
+        <p class="p-muted">Mecánica, Electricidad, Ondas, preparación a parciales y exámenes.</p>
+        <a href="https://calendly.com/cognividar/30min"
+           class="btn btn-outline"
+           target="_blank" rel="noopener">
+          Reservar clase
+        </a>
       </div>
 
       <div class="card">
-        <h3>Química</h3>
-        <p class="p-muted">General, orgánica e inorgánica. Explicaciones claras y prácticas.</p>
-        <a href="#agendar-clase" class="btn btn-outline">Reservar</a>
+        <h3>Clases de Química</h3>
+        <p class="p-muted">Química general, orgánica e inorgánica, desde cero hasta niveles avanzados.</p>
+        <a href="https://calendly.com/cognividar/30min"
+           class="btn btn-outline"
+           target="_blank" rel="noopener">
+          Reservar clase
+        </a>
+      </div>
+
+      <!-- Bloque terapias (estructura lista, aún sin links) -->
+      <div class="card">
+        <h3>Psicología <span style="font-size:0.8rem;color:var(--muted)">(próximamente)</span></h3>
+        <p class="p-muted">Sesiones 1:1 para bienestar emocional y salud mental.</p>
+        <button class="btn btn-outline" onclick="alert('Muy pronto podrás agendar psicología online aquí 🧠');">
+          Próximamente
+        </button>
       </div>
 
       <div class="card">
-        <h3>Psicología</h3>
-        <p class="p-muted">Sesiones 1:1 con psicólogos profesionales.</p>
-        <a href="#agendar-terapia" class="btn btn-outline">Agendar</a>
+        <h3>Fonoaudiología <span style="font-size:0.8rem;color:var(--muted)">(próximamente)</span></h3>
+        <p class="p-muted">Comunicación, lenguaje y apoyo en procesos educativos.</p>
+        <button class="btn btn-outline" onclick="alert('Muy pronto podrás agendar fonoaudiología aquí 🗣️');">
+          Próximamente
+        </button>
       </div>
 
       <div class="card">
-        <h3>Fonoaudiología</h3>
-        <p class="p-muted">Comunicación, lenguaje y apoyo académico.</p>
-        <a href="#agendar-terapia" class="btn btn-outline">Agendar</a>
-      </div>
-
-      <div class="card">
-        <h3>Fisioterapia</h3>
-        <p class="p-muted">Rehabilitación guiada por especialistas.</p>
-        <a href="#agendar-terapia" class="btn btn-outline">Agendar</a>
+        <h3>Fisioterapia <span style="font-size:0.8rem;color:var(--muted)">(próximamente)</span></h3>
+        <p class="p-muted">Rehabilitación y acompañamiento en el movimiento.</p>
+        <button class="btn btn-outline" onclick="alert('Muy pronto podrás agendar fisioterapia aquí 💪');">
+          Próximamente
+        </button>
       </div>
 
     </div>
@@ -137,10 +174,10 @@
     <h2 class="h2">Cómo funciona</h2>
 
     <ul style="list-style:none;padding:0;margin-top:14px;font-size:1.05rem;">
-      <li>✓ Elige servicio y profesional</li>
-      <li>✓ Agenda y paga en línea</li>
-      <li>✓ Conéctate por videollamada</li>
-      <li>✓ Recibe materiales y acompañamiento</li>
+      <li>✓ Elige qué tipo de clase necesitas</li>
+      <li>✓ Agenda en <strong>2–3 minutos</strong> desde el calendario online</li>
+      <li>✓ Recibe el enlace de videollamada</li>
+      <li>✓ Conéctate desde tu celular, tablet o computador</li>
     </ul>
   </div>
 </section>
@@ -155,20 +192,33 @@
 
       <div class="card">
         <h3>Sesión Única</h3>
-        <p class="p-muted">Ideal para necesidades puntuales.</p>
-        <a href="#agendar" class="btn btn-primary">Elegir</a>
+        <p class="p-muted">Ideal para resolver dudas puntuales o preparar un examen cercano.</p>
+        <a href="https://calendly.com/cognividar/30min"
+           class="btn btn-primary"
+           target="_blank" rel="noopener">
+          Elegir
+        </a>
       </div>
 
       <div class="card">
         <h3>4 Sesiones</h3>
-        <p class="p-muted">Ahorro del 10%.</p>
-        <a href="#agendar" class="btn btn-primary">Elegir</a>
+        <p class="p-muted">Plan de acompañamiento corto. Ahorro frente a sesiones sueltas.</p>
+        <!-- Más adelante esto puede ir a una página de planes propia -->
+        <a href="https://calendly.com/cognividar/30min"
+           class="btn btn-primary"
+           target="_blank" rel="noopener">
+          Empezar con clases
+        </a>
       </div>
 
       <div class="card">
         <h3>8 Sesiones</h3>
-        <p class="p-muted">Ahorro del 20%.</p>
-        <a href="#agendar" class="btn btn-primary">Elegir</a>
+        <p class="p-muted">Ideal para procesos más estructurados durante el periodo académico.</p>
+        <a href="https://calendly.com/cognividar/30min"
+           class="btn btn-primary"
+           target="_blank" rel="noopener">
+          Empezar con clases
+        </a>
       </div>
 
     </div>
@@ -183,18 +233,27 @@
 
     <div class="cards" style="margin-top:14px">
       <div class="card">
-        <h3>¿Cómo agendo?</h3>
-        <p class="p-muted">Elige servicio, confirma pago y recibe el enlace.</p>
+        <h3>¿Cómo agendo una clase?</h3>
+        <p class="p-muted">
+          Solo haces clic en “Reservar clase”, eliges fecha y hora en el calendario
+          de CogniviDAR y confirmas.
+        </p>
       </div>
 
       <div class="card">
-        <h3>¿Qué métodos de pago aceptan?</h3>
-        <p class="p-muted">PSE, tarjetas, billeteras digitales.</p>
+        <h3>¿Qué necesito para la sesión?</h3>
+        <p class="p-muted">
+          Conexión estable a internet, un dispositivo con cámara/micrófono
+          y tus apuntes o materiales de estudio.
+        </p>
       </div>
 
       <div class="card">
-        <h3>¿Las sesiones son seguras?</h3>
-        <p class="p-muted">Usamos plataformas seguras, 100% confidenciales.</p>
+        <h3>¿Las terapias también serán online?</h3>
+        <p class="p-muted">
+          Sí. Próximamente podrás agendar Psicología, Fonoaudiología y Fisioterapia
+          desde la misma página.
+        </p>
       </div>
     </div>
   </div>
@@ -204,12 +263,25 @@
 <!-- ===================== CTA ===================== -->
 <section id="agendar" class="section cta">
   <div class="container">
-    <h2 class="h2" style="color:#fff">Agenda tu primera sesión hoy</h2>
-    <p>Rápido, seguro y 100% online.</p>
+    <h2 class="h2" style="color:#fff">Reserva tu primera clase hoy</h2>
+    <p>Es rápido, seguro y 100% online.</p>
 
     <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:12px">
-      <a id="agendar-clase" class="btn" style="background:#fff;color:var(--teal)">Reservar clase</a>
-      <a id="agendar-terapia" class="btn" style="background:#111827;color:#fff">Agendar terapia</a>
+      <a id="agendar-clase"
+         href="https://calendly.com/cognividar/30min"
+         class="btn"
+         style="background:#fff;color:var(--teal)"
+         target="_blank" rel="noopener">
+        Reservar clase
+      </a>
+
+      <a id="agendar-terapia"
+         href="#"
+         class="btn"
+         style="background:#111827;color:#fff"
+         onclick="alert('Muy pronto podrás agendar terapias online aquí 🤝'); return false;">
+        Agendar terapia (próximamente)
+      </a>
     </div>
   </div>
 </section>
@@ -222,12 +294,16 @@
     <div class="cols">
       <div>
         <div style="font-weight:800;color:#fff">CogniviDAR</div>
-        <p class="small" style="margin-top:8px">Unimos conocimiento y bienestar para transformar vidas.</p>
+        <p class="small" style="margin-top:8px">
+          Unimos conocimiento y bienestar para transformar vidas.
+        </p>
       </div>
 
       <div>
         <div style="font-weight:700;color:#fff">Servicios</div>
-        <div class="small" style="margin-top:8px">Clases 1:1 • Psicología • Fonoaudiología • Fisioterapia • Gerontología</div>
+        <div class="small" style="margin-top:8px">
+          Clases 1:1 • (Próximamente) Psicología • Fonoaudiología • Fisioterapia • Gerontología
+        </div>
       </div>
 
       <div>
@@ -260,7 +336,6 @@
 
   </div>
 </footer>
-
 
 </body>
 </html>
