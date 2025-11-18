@@ -33,11 +33,7 @@
       <a href="#planes">Planes</a>
       <a href="#faq">FAQ</a>
       <a href="/contacto.html" class="btn btn-outline">Contacto</a>
-
-      <a href="/reservar.html"
-         class="btn btn-primary">
-        Reservar
-      </a>
+      <a href="/reservar.html" class="btn btn-primary">Reservar</a>
     </nav>
   </div>
 </header>
@@ -58,11 +54,10 @@
 
         <p class="lead">
           Clases personalizadas (Matemáticas, Física, Química) y terapias profesionales
-          (Psicología, Fonoaudiología, Fisioterapia). 100% online.
+          (Psicología, Fonoaudiología, Fisioterapia). Todo 100% online y pensado para acompañarte.
         </p>
 
         <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px">
-
           <a href="https://calendly.com/cognividar/new-meeting"
              class="btn btn-primary" target="_blank" rel="noopener">
             Matemáticas
@@ -77,14 +72,13 @@
              class="btn btn-outline" target="_blank" rel="noopener">
             Química
           </a>
-
         </div>
       </div>
 
       <aside class="hero-card">
         <strong>Sesiones online fáciles y efectivas</strong>
         <p class="small">
-          Agenda en minutos y conéctate desde cualquier dispositivo.
+          Reserva en minutos, recibe el enlace y conéctate desde tu celular o computador.
         </p>
 
         <div class="hero-badges">
@@ -110,7 +104,7 @@
       <!-- CLASES -->
       <div class="card">
         <h3>Clases de Matemáticas</h3>
-        <p class="p-muted">Álgebra, Cálculo, Estadística y más.</p>
+        <p class="p-muted">Álgebra, Cálculo, Estadística y más, con enfoque práctico.</p>
         <a href="https://calendly.com/cognividar/new-meeting"
            class="btn btn-outline" target="_blank" rel="noopener">
           Reservar
@@ -119,7 +113,7 @@
 
       <div class="card">
         <h3>Clases de Física</h3>
-        <p class="p-muted">Preparación para exámenes y refuerzos.</p>
+        <p class="p-muted">Refuerzos, preparación de parciales y exámenes.</p>
         <a href="https://calendly.com/cognividar/30min"
            class="btn btn-outline" target="_blank" rel="noopener">
           Reservar
@@ -128,7 +122,7 @@
 
       <div class="card">
         <h3>Clases de Química</h3>
-        <p class="p-muted">General, orgánica e inorgánica.</p>
+        <p class="p-muted">Química general, orgánica e inorgánica con explicaciones claras.</p>
         <a href="https://calendly.com/cognividar/clases-de-quimica"
            class="btn btn-outline" target="_blank" rel="noopener">
           Reservar
@@ -138,7 +132,7 @@
       <!-- TERAPIAS -->
       <div class="card">
         <h3>Psicología</h3>
-        <p class="p-muted">Bienestar emocional con profesionales.</p>
+        <p class="p-muted">Espacio profesional para tu bienestar emocional.</p>
         <a href="https://calendly.com/cognividar/sesion-de-psicologia"
            class="btn btn-outline" target="_blank" rel="noopener">
           Agendar
@@ -147,7 +141,7 @@
 
       <div class="card">
         <h3>Fonoaudiología</h3>
-        <p class="p-muted">Lenguaje, comunicación y aprendizaje.</p>
+        <p class="p-muted">Lenguaje, comunicación y apoyo en procesos de aprendizaje.</p>
         <a href="https://calendly.com/cognividar/sesion-fonoaudilogia"
            class="btn btn-outline" target="_blank" rel="noopener">
           Agendar
@@ -156,7 +150,7 @@
 
       <div class="card">
         <h3>Fisioterapia</h3>
-        <p class="p-muted">Rehabilitación guiada y seguimiento.</p>
+        <p class="p-muted">Rehabilitación y acompañamiento físico guiado por profesionales.</p>
         <a href="https://calendly.com/cognividar/sesion-de-terapias"
            class="btn btn-outline" target="_blank" rel="noopener">
           Agendar
@@ -176,43 +170,73 @@
     <ul style="list-style:none;padding:0;margin-top:14px;font-size:1.05rem;">
       <li>✓ Selecciona el servicio que necesitas</li>
       <li>✓ Elige el horario disponible en el calendario</li>
-      <li>✓ Recibe el enlace de videollamada</li>
+      <li>✓ Recibe el enlace de videollamada en tu correo</li>
       <li>✓ Conéctate desde cualquier dispositivo</li>
     </ul>
   </div>
 </section>
 
 
-<!-- ===================== PLANES ===================== -->
+<!-- ===================== PLANES NUEVOS ===================== -->
 <section id="planes" class="section">
   <div class="container">
-    <h2 class="h2">Planes</h2>
+    <h2 class="h2">Planes y Tarifas</h2>
+    <p class="p-muted">Selecciona tu servicio y elige el plan ideal para ti.</p>
 
-    <div class="cards" style="margin-top:18px">
+    <!-- Selector de servicio -->
+    <div style="margin:20px 0;">
+      <label for="servicioSelect" style="font-weight:600;">Selecciona un servicio:</label>
+      <select id="servicioSelect" style="padding:10px;margin-left:10px; border-radius:8px;">
+        <option value="matematicas">Clases de Matemáticas</option>
+        <option value="fisica">Clases de Física</option>
+        <option value="quimica">Clases de Química</option>
+        <option value="psicologia">Psicología</option>
+        <option value="fonoaudiologia">Fonoaudiología</option>
+        <option value="fisioterapia">Fisioterapia</option>
+      </select>
+    </div>
 
+    <!-- Tarjetas -->
+    <div class="cards" style="margin-top:20px">
+
+      <!-- Sesión única -->
       <div class="card">
-        <h3>Sesión única</h3>
-        <p class="p-muted">Ideal para dudas puntuales.</p>
-        <a href="https://calendly.com/cognividar/new-meeting"
-           class="btn btn-primary" target="_blank" rel="noopener">
+        <h3>Sesión Única</h3>
+        <p class="p-muted">Perfecta para resolver dudas específicas o consultas puntuales.</p>
+        <p><strong id="precioUnico">—</strong></p>
+        <p class="p-muted"><small id="detalleUnico"></small></p>
+
+        <a id="btnUnico" href="#"
+           class="btn btn-primary"
+           target="_blank" rel="noopener">
           Elegir
         </a>
       </div>
 
-      <div class="card">
-        <h3>Paquete de 4 sesiones</h3>
-        <p class="p-muted">Acompañamiento académico continuo.</p>
-        <a href="https://calendly.com/cognividar/new-meeting"
-           class="btn btn-primary" target="_blank" rel="noopener">
+      <!-- Paquete 4 -->
+      <div class="card" style="border:2px solid var(--teal)">
+        <h3>Paquete 4 sesiones</h3>
+        <p class="p-muted">Acompañamiento continuo con un ahorro especial.</p>
+        <p><strong id="precio4">—</strong></p>
+        <p class="p-muted"><small id="ahorro4"></small></p>
+
+        <a id="btn4" href="#"
+           class="btn btn-dark"
+           target="_blank" rel="noopener">
           Elegir
         </a>
       </div>
 
+      <!-- Paquete 8 -->
       <div class="card">
-        <h3>Paquete de 8 sesiones</h3>
-        <p class="p-muted">Mejora constante y seguimiento.</p>
-        <a href="https://calendly.com/cognividar/new-meeting"
-           class="btn btn-primary" target="_blank" rel="noopener">
+        <h3>Paquete 8 sesiones</h3>
+        <p class="p-muted">El mejor valor por sesión para un progreso sostenido.</p>
+        <p><strong id="precio8">—</strong></p>
+        <p class="p-muted"><small id="ahorro8"></small></p>
+
+        <a id="btn8" href="#"
+           class="btn btn-outline"
+           target="_blank" rel="noopener">
           Elegir
         </a>
       </div>
@@ -230,17 +254,17 @@
     <div class="cards" style="margin-top:14px">
       <div class="card">
         <h3>¿Cómo reservo?</h3>
-        <p class="p-muted">Elige el servicio y reserva directo en Calendly.</p>
+        <p class="p-muted">Elige el servicio, selecciona tu horario y confirma en Calendly.</p>
       </div>
 
       <div class="card">
         <h3>¿Qué necesito?</h3>
-        <p class="p-muted">Un celular o PC con internet estable.</p>
+        <p class="p-muted">Un celular o computador con internet estable y un espacio tranquilo.</p>
       </div>
 
       <div class="card">
         <h3>¿Puedo cambiar la cita?</h3>
-        <p class="p-muted">Sí, desde el correo de confirmación.</p>
+        <p class="p-muted">Sí, desde el correo de confirmación puedes reprogramar según disponibilidad.</p>
       </div>
     </div>
   </div>
@@ -303,7 +327,7 @@
         <div style="font-weight:700;color:#fff">Contacto</div>
         <div class="small" style="margin-top:8px">
           Colombia • 100% online<br/>
-          cognividar@gmail.com
+          Cognividar@gmail.com
         </div>
       </div>
     </div>
@@ -312,7 +336,7 @@
 
     <div class="footer-brand">
       <img src="assets/img/logo-cognividar.png" alt="CogniviDAR">
-    </div>
+      </div>
 
     <div class="small" style="text-align:center;margin-top:16px">
       © 2025 CogniviDAR — Todos los derechos reservados
@@ -321,6 +345,83 @@
   </div>
 </footer>
 
+
+<!-- ===================== SCRIPT PRECIOS DINÁMICOS ===================== -->
+<script>
+const preciosBase = {
+  matematicas: { valor: 65000, link: "https://calendly.com/cognividar/new-meeting" },
+  fisica: { valor: 65000, link: "https://calendly.com/cognividar/30min" },
+  quimica: { valor: 65000, link: "https://calendly.com/cognividar/clases-de-quimica" },
+  psicologia: { valor: null, link: "https://calendly.com/cognividar/sesion-de-psicologia" },
+  fonoaudiologia: { valor: 70000, link: "https://calendly.com/cognividar/sesion-fonoaudilogia" },
+  fisioterapia: { valor: 75000, link: "https://calendly.com/cognividar/sesion-de-terapias" },
+};
+
+const desc4 = 0.10;
+const desc8 = 0.15;
+
+const precioUnico = document.getElementById("precioUnico");
+const detalleUnico = document.getElementById("detalleUnico");
+const precio4 = document.getElementById("precio4");
+const precio8 = document.getElementById("precio8");
+
+const ahorro4 = document.getElementById("ahorro4");
+const ahorro8 = document.getElementById("ahorro8");
+
+const btnUnico = document.getElementById("btnUnico");
+const btn4 = document.getElementById("btn4");
+const btn8 = document.getElementById("btn8");
+
+function formatoCOP(n) {
+  return "COP $" + n.toLocaleString("es-CO");
+}
+
+function actualizarPrecios() {
+  const servicio = document.getElementById("servicioSelect").value;
+  const datos = preciosBase[servicio];
+
+  if (!datos) return;
+
+  // Caso psicología: precio según evaluación
+  if (datos.valor === null) {
+    precioUnico.textContent = "Según el caso";
+    detalleUnico.textContent = "El valor se define según la evaluación inicial.";
+    precio4.textContent = "Según evaluación";
+    precio8.textContent = "Según evaluación";
+    ahorro4.textContent = "";
+    ahorro8.textContent = "";
+
+    btnUnico.href = datos.link;
+    btn4.href = datos.link;
+    btn8.href = datos.link;
+    return;
+  }
+
+  const base = datos.valor;
+
+  const total4 = Math.round(base * 4 * (1 - desc4));
+  const total8 = Math.round(base * 8 * (1 - desc8));
+
+  const ahorro4val = base * 4 - total4;
+  const ahorro8val = base * 8 - total8;
+
+  precioUnico.textContent = formatoCOP(base);
+  detalleUnico.textContent = "Precio por sesión individual.";
+
+  precio4.textContent = formatoCOP(total4);
+  precio8.textContent = formatoCOP(total8);
+
+  ahorro4.textContent = `Ahorra ${formatoCOP(ahorro4val)} (10%)`;
+  ahorro8.textContent = `Ahorra ${formatoCOP(ahorro8val)} (15%)`;
+
+  btnUnico.href = datos.link;
+  btn4.href = datos.link;
+  btn8.href = datos.link;
+}
+
+actualizarPrecios();
+document.getElementById("servicioSelect").addEventListener("change", actualizarPrecios);
+</script>
 
 </body>
 </html>
