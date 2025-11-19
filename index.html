@@ -8,13 +8,14 @@
   <meta name="description"
     content="Clases personalizadas (Matemáticas, Física, Química) y terapias profesionales (Psicología, Fonoaudiología, Fisioterapia). Reserva 100% online.">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/img/logo-navidad-header.png">
+  <!-- Favicon (lo dejamos igual, sin navidad para no tocar más cosas) -->
+  <link rel="icon" type="image/png" href="assets/img/logo-cognividar.png">
   <meta name="theme-color" content="#00A8A8">
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/brand.css">
 
+  <!-- Ajustes puntuales para tamaños de logos navideños -->
   <style>
     .logo-header {
       width: 85px;
@@ -36,10 +37,8 @@
   <header class="nav">
     <div class="container">
       <div class="brand-row">
-
-        <!-- ★ LOGO NAVIDEÑO HEADER ★ -->
-        <img class="logo-header" src="assets/img/logo-navidad-header.png" alt="CogniviDAR Navidad">
-
+        <!-- LOGO NAVIDEÑO HEADER: solo cambia la imagen y se añade clase extra -->
+        <img class="logo logo-header" src="assets/img/logo-navidad-header.png" alt="CogniviDAR">
         <div>
           <div class="name">Cognivi<span class="dar">DAR</span></div>
           <div class="sub">Educar con propósito, servir con pasión</div>
@@ -163,6 +162,130 @@
   </section>
 
 
+  <!-- ===================== CÓMO FUNCIONA ===================== -->
+  <section id="como-funciona" class="section alt">
+    <div class="container">
+      <h2 class="h2">Cómo funciona</h2>
+
+      <ul style="list-style:none;padding:0;margin-top:14px;font-size:1.05rem;">
+        <li>✓ Selecciona el servicio que necesitas</li>
+        <li>✓ Elige el horario disponible en nuestro calendario</li>
+        <li>✓ Recibe el enlace de videollamada</li>
+        <li>✓ Conéctate desde cualquier dispositivo</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- ===================== PLANES NUEVOS ===================== -->
+  <section id="planes" class="section">
+    <div class="container">
+      <h2 class="h2">Planes y Tarifas</h2>
+      <p class="p-muted">Selecciona tu servicio y elige el plan ideal para ti.</p>
+
+      <!-- Selector de servicio -->
+      <div style="margin:20px 0;">
+        <label for="servicioSelect" style="font-weight:600;">Selecciona un servicio:</label>
+        <select id="servicioSelect" style="padding:10px;margin-left:10px; border-radius:8px;">
+          <option value="matematicas">Clases de Matemáticas</option>
+          <option value="fisica">Clases de Física</option>
+          <option value="quimica">Clases de Química</option>
+          <option value="psicologia">Psicología</option>
+          <option value="fonoaudiologia">Fonoaudiología</option>
+          <option value="fisioterapia">Fisioterapia</option>
+        </select>
+      </div>
+
+      <!-- Tarjetas -->
+      <div class="cards" style="margin-top:20px">
+
+        <!-- Sesión única -->
+        <div class="card">
+          <h3>Sesión Única</h3>
+          <p class="p-muted">Perfecta para dudas específicas o consultas puntuales.</p>
+          <p><strong id="precioUnico">—</strong></p>
+          <p class="p-muted"><small id="detalleUnico"></small></p>
+
+          <a id="btnUnico" href="#" class="btn btn-primary" target="_blank" rel="noopener">Elegir</a>
+        </div>
+
+        <!-- Paquete 4 -->
+        <div class="card" style="border:2px solid var(--teal)">
+          <h3>Paquete 4 sesiones</h3>
+          <p class="p-muted">Acompañamiento continuo con un ahorro especial.</p>
+          <p><strong id="precio4">—</strong></p>
+          <p class="p-muted"><small id="ahorro4"></small></p>
+
+          <a id="btn4" href="#" class="btn btn-dark" target="_blank" rel="noopener">Elegir</a>
+        </div>
+
+        <!-- Paquete 8 -->
+        <div class="card">
+          <h3>Paquete 8 sesiones</h3>
+          <p class="p-muted">El mejor valor por sesión para un progreso sostenido.</p>
+          <p><strong id="precio8">—</strong></p>
+          <p class="p-muted"><small id="ahorro8"></small></p>
+
+          <a id="btn8" href="#" class="btn btn-outline" target="_blank" rel="noopener">Elegir</a>
+        </div>
+
+      </div>
+
+      <!-- Nota premium de tarifas -->
+      <div class="tarifa-note" style="margin-top:24px;padding:16px;border-radius:12px;border:1px dashed #CBD5E1;background:#F8FAFC;">
+        <p class="small p-muted">
+          <strong style="color:var(--navy);">Transparencia en tarifas:</strong>
+          Las tarifas de Matemáticas, Física y Química corresponden al valor por hora de sesión individual; cada reserva se programa por un mínimo de una (1) hora.
+          En Fonoaudiología y Fisioterapia, el valor indicado corresponde al costo fijo por terapia.
+          En Psicología, el valor de la sesión se define de manera personalizada durante la evaluación inicial.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===================== FAQ ===================== -->
+  <section id="faq" class="section alt">
+    <div class="container">
+      <h2 class="h2">Preguntas frecuentes</h2>
+
+      <div class="cards" style="margin-top:14px">
+        <div class="card">
+          <h3>¿Cómo reservo?</h3>
+          <p class="p-muted">Elige el servicio, selecciona tu horario y confirma en Calendly.</p>
+        </div>
+
+        <div class="card">
+          <h3>¿Qué necesito?</h3>
+          <p class="p-muted">Un celular o computador con internet estable y un espacio tranquilo.</p>
+        </div>
+
+        <div class="card">
+          <h3>¿Puedo cambiar la cita?</h3>
+          <p class="p-muted">Sí, desde el correo de confirmación puedes reprogramar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== CTA ===================== -->
+  <section id="agendar" class="section cta">
+    <div class="container">
+      <h2 class="h2" style="color:#fff">Reserva tu primera sesión hoy</h2>
+      <p>Es rápido, seguro y 100% online.</p>
+
+      <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:12px">
+        <a href="https://calendly.com/cognividar/new-meeting" class="btn" style="background:#fff;color:var(--teal)"
+          target="_blank" rel="noopener">Reservar clase</a>
+        <a href="https://calendly.com/cognividar/sesion-de-psicologia" class="btn"
+          style="background:#111827;color:#fff" target="_blank" rel="noopener">Agendar terapia</a>
+      </div>
+    </div>
+  </section>
+
+
   <!-- ===================== FOOTER ===================== -->
   <footer id="contacto" class="footer">
     <div class="container">
@@ -202,9 +325,9 @@
 
       <div class="sep"></div>
 
-      <!-- ★ LOGO NAVIDEÑO FOOTER ★ -->
       <div class="footer-brand">
-        <img class="footer-logo" src="assets/img/logo-navidad-footer.png" alt="CogniviDAR Navidad Footer">
+        <!-- LOGO NAVIDEÑO FOOTER: solo cambiamos src y clase -->
+        <img class="footer-logo" src="assets/img/logo-navidad-footer.png" alt="CogniviDAR">
       </div>
 
       <div class="small" style="text-align:center;margin-top:16px">
@@ -214,7 +337,84 @@
     </div>
   </footer>
 
-  (El resto del JS permanece igual)
+
+  <!-- ===================== SCRIPT PRECIOS DINÁMICOS ===================== -->
+  <script>
+    const preciosBase = {
+      matematicas: { valor: 65000, link: "https://calendly.com/cognividar/new-meeting" },
+      fisica: { valor: 65000, link: "https://calendly.com/cognividar/30min" },
+      quimica: { valor: 65000, link: "https://calendly.com/cognividar/clases-de-quimica" },
+      psicologia: { valor: null, link: "https://calendly.com/cognividar/sesion-de-psicologia" },
+      fonoaudiologia: { valor: 70000, link: "https://calendly.com/cognividar/sesion-fonoaudilogia" },
+      fisioterapia: { valor: 75000, link: "https://calendly.com/cognividar/sesion-de-terapias" },
+    };
+
+    const desc4 = 0.10;
+    const desc8 = 0.15;
+
+    const precioUnico = document.getElementById("precioUnico");
+    const detalleUnico = document.getElementById("detalleUnico");
+    const precio4 = document.getElementById("precio4");
+    const precio8 = document.getElementById("precio8");
+
+    const ahorro4 = document.getElementById("ahorro4");
+    const ahorro8 = document.getElementById("ahorro8");
+
+    const btnUnico = document.getElementById("btnUnico");
+    const btn4 = document.getElementById("btn4");
+    const btn8 = document.getElementById("btn8");
+
+    function formatoCOP(n) {
+      return "COP $" + n.toLocaleString("es-CO");
+    }
+
+    function actualizarPrecios() {
+      const servicio = document.getElementById("servicioSelect").value;
+      const datos = preciosBase[servicio];
+
+      if (!datos) return;
+
+      // Caso psicología: precio personalizado
+      if (datos.valor === null) {
+        precioUnico.textContent = "Según el caso";
+        detalleUnico.textContent = "El valor se define según la evaluación inicial.";
+        precio4.textContent = "Según evaluación";
+        precio8.textContent = "Según evaluación";
+        ahorro4.textContent = "";
+        ahorro8.textContent = "";
+
+        btnUnico.href = datos.link;
+        btn4.href = datos.link;
+        btn8.href = datos.link;
+        return;
+      }
+
+      const base = datos.valor;
+
+      const total4 = Math.round(base * 4 * (1 - desc4));
+      const total8 = Math.round(base * 8 * (1 - desc8));
+
+      const ahorro4val = base * 4 - total4;
+      const ahorro8val = base * 8 - total8;
+
+      precioUnico.textContent = formatoCOP(base);
+      detalleUnico.textContent = "Precio por sesión individual.";
+
+      precio4.textContent = formatoCOP(total4);
+      precio8.textContent = formatoCOP(total8);
+
+      ahorro4.textContent = `Ahorra ${formatoCOP(ahorro4val)} (10%)`;
+      ahorro8.textContent = `Ahorra ${formatoCOP(ahorro8val)} (15%)`;
+
+      btnUnico.href = datos.link;
+      btn4.href = datos.link;
+      btn8.href = datos.link;
+    }
+
+    actualizarPrecios();
+    document.getElementById("servicioSelect").addEventListener("change", actualizarPrecios);
+  </script>
 
 </body>
+
 </html>
